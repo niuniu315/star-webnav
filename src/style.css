@@ -80,7 +80,7 @@ input:focus {
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .siteList>li {
@@ -114,6 +114,21 @@ input:focus {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+}
+
+.close {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 5px;
+    display: none;
+}
+
+.site:hover .close {
+    display: block;
+    /* 鼠标浮上去显示 */
 }
 
 .site>.logo {
