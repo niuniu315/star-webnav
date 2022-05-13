@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+ul,
+li {
+    list-style: none;
+}
+
 .image {
     text-align: center;
 }
@@ -56,10 +61,107 @@ input:focus {
 .searchChange {
     font-size: smaller;
     color: grey;
+    margin-top: 3px;
 }
 
 .searchChangeLogo>.icon {
     color: grey;
     width: 1em;
     margin-left: 5px;
+}
+
+.globalMain {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.siteList {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.siteList>li {
+    width: 112px;
+    height: 112px;
+}
+
+@media (max-width: 500px) {
+    .siteList>li {
+        width: 80px;
+        height: 80px;
+    }
+    .image>img {
+        width: 200px;
+    }
+    .globalHeader {
+        position: relative;
+        width: 300px;
+        margin-top: 20px;
+    }
+}
+
+.siteList>li:hover {
+    background: rgb(229, 231, 232);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.site>.logo {
+    width: 48px;
+    height: 48px;
+    margin-top: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(241, 243, 244);
+}
+
+.site>.logo>.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.site>.link {
+    margin: 10px;
+    font-size: small;
+}
+
+.addButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.last {}
+
+.iconadd {
+    width: 48px;
+    height: 48px;
+    margin-top: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(241, 243, 244);
+}
+
+.iconadd>.icon {}
+
+.text {
+    white-space: nowrap;
+    margin: 10px;
+    font-size: smaller;
 }
