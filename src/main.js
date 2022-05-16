@@ -23,7 +23,7 @@ const render = () => {
           <div class="site">
             <div class="logo">${node.logo[0]}</div>
             <div class="link">${simplifyUrl(node.url)}</div>
-            <div class="close">
+            <div class="more">
                 <svg class="icon">
                     <use xlink:href="#icon-more"></use>
                 </svg>
@@ -33,7 +33,11 @@ const render = () => {
         </li>`).insertBefore($lastLi)
             // 直接做到点击 li元素 跳转到相应的url
         $li.on('click', () => {
-            window.open(node.url)
+                window.open(node.url)
+            })
+            // 解决点击 .more 元素也会同时点击 li 元素 ，阻止事件冒泡
+        $li.on('click', '.more', (e) => {
+            e.stopPropagation()
         })
     })
 }

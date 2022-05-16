@@ -117,16 +117,17 @@ input:focus {
     position: relative;
 }
 
-.close {
+.more {
     border-radius: 50%;
     position: absolute;
     top: 0;
     right: 0;
     margin-top: 5px;
+    background: red;
     display: none;
 }
 
-.site:hover .close {
+.site:hover .more {
     display: block;
     /* 鼠标浮上去显示 */
 }
