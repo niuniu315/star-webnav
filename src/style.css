@@ -117,19 +117,36 @@ input:focus {
     position: relative;
 }
 
-.more {
+.close {
     border-radius: 50%;
     position: absolute;
     top: 0;
     right: 0;
     margin-top: 5px;
-    background: red;
     display: none;
+    background: gray;
 }
 
-.site:hover .more {
+.site:hover .close {
     display: block;
     /* 鼠标浮上去显示 */
+}
+
+.delete1 {
+    justify-content: center;
+    background-color: #eee;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.delete1>.icon {
+    width: 16px;
+    height: 16px;
+    margin: 2px;
 }
 
 .site>.logo {

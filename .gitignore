@@ -1,2 +1,5 @@
 /.cache/
 /dist/
+/.idea/
+/main.js/
+/main2.js/
