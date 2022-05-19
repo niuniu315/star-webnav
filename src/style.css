@@ -16,6 +16,8 @@ li {
 img {
     width: 280px;
     margin-top: 100px;
+    pointer-events: none;
+    /* 图片不可查看 */
 }
 
 .globalHeader {
@@ -89,10 +91,6 @@ input:focus {
 }
 
 @media (max-width: 500px) {
-    .siteList>li {
-        width: 80px;
-        height: 80px;
-    }
     .image>img {
         width: 200px;
     }
