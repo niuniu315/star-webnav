@@ -122,12 +122,16 @@ input:focus {
     right: 0;
     margin-top: 5px;
     display: none;
-    background: gray;
 }
 
 .site:hover .close {
     display: block;
     /* 鼠标浮上去显示 */
+}
+.site:hover .close > .icon {
+    width: 24px;
+    height: 24px;
+    color: gray;
 }
 
 .delete1 {
